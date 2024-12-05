@@ -6,6 +6,6 @@ attendeeItems.forEach(item => {
     item.addEventListener('mouseenter', () => {
         // Change the image when hovering over an attendee item
         const imageName = item.getAttribute('data-image');
-        imageFrame.src = `./assets/images/${imageName}`;
+        imageFrame.src = `src/assets/images/${imageName}`;
     });
 });
