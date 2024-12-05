@@ -1,0 +1,324 @@
+/* Global */
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-color: #000;
+    color: #f0d78c;
+    line-height: 1.6;
+}
+
+h1, p {
+    margin: 0;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background-image: linear-gradient(45deg, #000, #111);
+    border-bottom: 2px solid #FFD700;
+}
+
+/* Header Section */
+header h1 {
+    font-size: 3.5rem;
+    color: #FFD700;
+    background: linear-gradient(to right, #FFFFFF, #FFD700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 1.5rem;
+    color: #f0d78c;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Welcome Section */
+#welcome {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #1a1a1a, #333333); /* Soft gradient background */
+    color: #f0d78c;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 40px; /* Adds separation from the next section */
+}
+
+#welcome p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Soft shadow for depth */
+    color: #f0d78c;
+    letter-spacing: 1px; /* Elegant letter spacing */
+}
+
+#welcome h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #FFD700;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5); /* Gold shine effect */
+}
+
+#welcome .highlight {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(to right, #FFD700, #f0d78c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Main Section */
+main {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #111;
+}
+
+main p {
+    font-size: 1rem;
+    color: #f0d78c;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+    color: #888;
+    font-size: 0.9rem;
+    border-top: 2px solid #FFD700;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Location */
+#location {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #111; 
+    color: #f0d78c;
+    border-top: 2px solid #FFD700; /* Narrow golden separator */
+}
+
+#location h2 {
+    font-size: 2rem;
+    color: #FFD700;
+    margin-bottom: 20px;
+}
+
+#location p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* Container for Map and Image */
+.location-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.location-container > div {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    border: 3px solid #FFD700;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.location-image img,
+.location-map iframe {
+    display: block;
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+}
+
+/* Directions Button */
+.directions-button-container {
+    margin-top: 20px;
+}
+
+.directions-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #000;
+    border: 2px solid #FFD700;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+.directions-button:hover {
+    background-color: #FFD700;
+    color: #000;
+    transform: translateY(-3px);
+}
+
+/* Menu Section */
+#menu {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #111;
+    color: #FFD700;
+    border-top: 2px solid #FFD700; /* Narrow golden separator */
+}
+
+#menu h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#menu .coming-soon {
+    font-size: 1.5rem;
+    color: #f0d78c;
+    font-style: italic;
+}
+
+/* Attendees Section */
+#attendees {
+    text-align: center;
+    padding: 40px 20px;
+    color: #f0d78c;
+    border-top: 2px solid #FFD700; /* Narrow golden separator */
+}
+
+#attendees h2 {
+    font-size: 2rem;
+    color: #FFD700;
+    margin-bottom: 20px;
+}
+
+.attendee-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.attendee-item {
+    position: relative;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+.attendee-name {
+    font-size: 1.2rem;
+    color: #FFD700;
+    display: block;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Cursor-following image */
+.attendee-image {
+    display: none;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    transition: transform 0.1s ease-in-out;
+}
+
+.attendee-item:hover .attendee-name {
+    color: #fff;
+}
+
+/* JavaScript will move the image with the cursor */
+
+/* Adding Separation after Intro Text */
+#intro {
+    margin-bottom: 40px; /* Adds space after the intro section */
+}
+
+/* General styles */
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-color: #000;
+    color: #f0d78c;
+    line-height: 1.6;
+}
+
+/* Attendees Section */
+#attendees {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #111;
+    color: #f0d78c;
+    border-top: 2px solid #FFD700;
+}
+
+#attendees h2 {
+    font-size: 2rem;
+    color: #FFD700;
+    margin-bottom: 20px;
+}
+
+.attendees-container {
+    display: flex;
+    width: 80%; /* Adjust width to center the content */
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px; /* Add space between list and portrait frame */
+}
+
+.attendee-list {
+    width: 30%; /* Set width for the list */
+    padding-right: 20px;
+    text-align: left; /* Ensure the text aligns left */
+}
+
+.attendee-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.attendee-list li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.attendee-list li:hover {
+    background-color: #444;
+}
+
+/* Attendee Image Frame */
+.attendee-image-frame {
+    width: 250px; /* Set width to match typical ID photo size */
+    height: 300px; /* Set height to match typical ID photo size */
+    border: 2px solid #FFD700;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+}
+
+.attendee-image-frame img {
+    width: 100%; /* Ensure the image fills the frame */
+    height: 100%; /* Ensure the image fills the frame */
+    object-fit: cover; /* Ensure the image keeps its aspect ratio and fills the frame */
+}
