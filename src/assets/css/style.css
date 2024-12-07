@@ -175,7 +175,7 @@ footer p {
     padding: 40px 20px;
     background-color: #111;
     color: #FFD700;
-    border-top: 2px solid #FFD700; /* Narrow golden separator */
+    border-top: 2px solid #FFD700;
 }
 
 #menu h2 {
@@ -183,10 +183,24 @@ footer p {
     margin-bottom: 20px;
 }
 
-#menu .coming-soon {
-    font-size: 1.5rem;
-    color: #f0d78c;
-    font-style: italic;
+/* Menu Box Styling */
+.menu-box {
+    display: inline-block;
+    background-color: #f9f9f9; /* Light grey, almost white */
+    padding: 40px 30px;
+    border: 3px solid #FFD700; /* Golden border */
+    border-radius: 15px; /* Smooth corners */
+    box-shadow: 0px 5px 15px rgba(255, 215, 0, 0.4); /* Softer golden sparkle shadow */
+    max-width: 400px; /* Menu size limit */
+    margin: 0 auto; /* Center the box */
+}
+
+.menu-details {
+    font-size: 1.3rem;
+    color: #333; /* Dark grey text for readability on light grey background */
+    line-height: 1.8;
+    text-align: left; /* Align menu items like a real menu */
+    font-family: 'Georgia', serif; /* Elegant font style */
 }
 
 /* Attendees Section */

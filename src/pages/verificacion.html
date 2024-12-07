@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificación de Asistente</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #111;
+            color: #f0d78c;
+        }
+        .verification-box {
+            text-align: center;
+            padding: 30px;
+            background-color: #222;
+            border: 3px solid #FFD700;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+        }
+        .verification-box h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #FFD700;
+        }
+        .verification-box p {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        .checkmark {
+            color: #4CAF50;
+            font-size: 4rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="verification-box">
+        <h1 id="attendee-name">Asistente</h1>
+        <p>Con permiso, disfrute de la cena</p>
+        <div class="checkmark">✔</div>
+    </div>
+
+    <script>
+        // Obtener el parámetro "name" de la URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const name = urlParams.get('name') || 'Desconocido';
+
+        // Actualizar el contenido dinámicamente
+        document.getElementById('attendee-name').textContent = `Asistente: ${name}`;
+    </script>
+</body>
+</html>
