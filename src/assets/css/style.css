@@ -36,6 +36,26 @@ header p {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
+.save-date-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: #111;
+    background-color: #FFD700;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.save-date-button:hover {
+    background-color: #f0d78c;
+    color: #000;
+}
+
 /* Welcome Section */
 #welcome {
     text-align: center;
